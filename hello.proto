@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package hello;
+
+option go_package = "./;hello";
+
+message Say{
+  int64           id    = 1;
+  string          hello = 2;
+  repeated string word  = 3;
+}
